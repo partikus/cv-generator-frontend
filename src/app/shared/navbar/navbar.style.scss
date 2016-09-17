@@ -1,3 +1,54 @@
+@import '../base.style';
+
 .navbar {
-  background: #810603;
+  background: #ffffff;
+  width: 100%;
+  border-bottom: 1px solid #e2e2e2;
+  padding: 4px 0px;
+  &-container {
+    height: 45px;
+    display: flex;
+    justify-content: space-between;
+  }
+  &-brand {
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  &-menu {
+    &-list {
+      list-style: none;
+      padding: 0;
+      li {
+        display: inline;
+        &:not(:last-child) {
+          margin-right: 5px;
+          padding-right: 5px;
+          border-right: 1px solid black;
+        }
+      }
+    }
+  }
+}
+
+@include media-sm-min {
+  .navbar {
+    padding: 5px 20px;
+    &-container {
+      height: 50px;
+    }
+  }
+}
+
+@include media-md-min {
+
+}
+
+@include media-lg-min {
+
+}
+
+@include media-xlg-min {
+
 }

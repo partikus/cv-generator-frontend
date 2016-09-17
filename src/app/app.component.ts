@@ -13,15 +13,10 @@ import { AppState } from './app.service';
   selector: 'app',
   encapsulation: ViewEncapsulation.None,
   styleUrls: [
-    './app.style.css'
+    './app.style.scss'
   ],
   template: `
-    <navbar></navbar>
-    <main>
-      <router-outlet></router-outlet>
-    </main>
-
-
+    <router-outlet></router-outlet>
     <footer>
       Footer
     </footer>
