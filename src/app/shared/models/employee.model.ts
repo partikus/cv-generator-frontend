@@ -28,9 +28,9 @@ export class Employee {
     this.lastName = model.lastName;
     this.username = model.username;
     this.email = model.email;
-    this.details = model.details;
+    this.details = model.details ? model.details : new Details({});
     this.skills = model.skills;
     this.languages = model.languages;
-    this.projects = model.projects;
+    this.projects = model.projects ? model.projects : [];
   }
 }
