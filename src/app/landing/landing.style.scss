@@ -1,0 +1,38 @@
+@import '../shared/base.style';
+
+.landing {
+  background: #2b2b2b;
+  min-height: 100%;
+  color: white;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &-container {
+    max-width: 1000px;
+    margin-bottom: 200px;
+  }
+  &-firstBox {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
+@include media-sm-min {
+
+}
+
+@include media-md-min {
+
+}
+
+@include media-lg-min {
+
+}
+
+@include media-xlg-min {
+
+}

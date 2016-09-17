@@ -17,6 +17,7 @@ import { AppState, InteralStateType } from './app.service';
 import { Home } from './home';
 import { NoContent } from './no-content';
 import { Navbar } from "./shared/navbar";
+import { Landing } from "./landing";
 
 // Application wide providers
 const APP_PROVIDERS = [
@@ -38,6 +39,7 @@ type StoreType = {
   declarations: [
     App,
     Home,
+    Landing,
     NoContent,
     Navbar
   ],
