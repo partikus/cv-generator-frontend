@@ -1,3 +1,29 @@
+@import '../../shared/base.style';
+
 .basicInformation {
+    width: 100%;
+    max-width: 1000px;
+  &-form {
+    display: flex;
+    flex-direction: column;
+    &-group {
+      display: flex;
+    }
+  }
+}
+
+@include media-sm-min {
+
+}
+
+@include media-md-min {
+
+}
+
+@include media-lg-min {
+
+}
+
+@include media-xlg-min {
 
 }

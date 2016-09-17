@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { AppState } from '../app.service';
+import { Component, Input } from '@angular/core';
+import { Employee } from "../../shared/models/employee.model";
 
 @Component({
   selector: 'basic-information',
@@ -7,8 +7,8 @@ import { AppState } from '../app.service';
   templateUrl: './basic-information.template.html'
 })
 export class BasicInformation {
+  @Input() employee: Employee;
   constructor() {
-
   }
 
   ngOnInit() {

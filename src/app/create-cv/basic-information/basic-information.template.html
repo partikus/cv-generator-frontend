@@ -2,18 +2,43 @@
   <div class="basicInformation-header">
     <h1>Basic information</h1>
   </div>
-  <form>
-    <div>
-      <label for="name">Name</label>
-      <input id="name" name="name" type="text" placeholder="name">
+  <form class="basicInformation-form">
+    <div class="basicInformation-form-group">
+      <label for="username">Username:</label>
+      <input [(ngModel)]="employee.username" id="username" name="username" type="text" placeholder="username">
     </div>
-    <div>
-      <label for="surname">Surname</label>
-      <input id="surname" name="surname" type="text" placeholder="surname">
+    <div class="basicInformation-form-group">
+      <label for="email">Email:</label>
+      <input [(ngModel)]="employee.email" id="email" name="email" type="email" placeholder="email">
     </div>
-    <div>
-      <label for="technology">Technology</label>
-      <input id="technology" name="technology" type="text" placeholder="technology">
+    <div class="basicInformation-form-group">
+      <label for="firstName">First name:</label>
+      <input [(ngModel)]="employee.firstName" id="firstName" name="firstName" type="text" placeholder="firstName">
+    </div>
+    <div class="basicInformation-form-group">
+      <label for="lastName">Last name:</label>
+      <input [(ngModel)]="employee.lastName" id="lastName" name="lastName" type="text" placeholder="lastName">
+    </div>
+    <div class="basicInformation-form-group">
+      <label for="jobTitle">Job title:</label>
+      <input [(ngModel)]="employee.jobTitle" id="jobTitle" name="jobTitle" type="text" placeholder="jobTitle">
+    </div>
+    <div class="basicInformation-form-group">
+      <label for="experience">Experience in following industries</label>
+      <input [(ngModel)]="employee.details.experience" id="experience" name="experience" type="text" placeholder="experience">
+    </div>
+    <div class="basicInformation-form-group">
+      <label for="education">Education</label>
+      <textarea [(ngModel)]="employee.details.education" id="education" name="education" placeholder="education"></textarea>
+    </div>
+    <div class="basicInformation-form-group">
+      <label for="hobbies">Personal interests:</label>
+      <input [(ngModel)]="employee.details.hobbies" id="hobbies" name="hobbies" type="text" placeholder="hobbies">
+    </div>
+    <div class="basicInformation-form-group">
+      <label for="language">Languages</label>
+      <input [(ngModel)]="employee.languages" id="language" name="language" type="text" placeholder="language">
     </div>
   </form>
 </div>
+
