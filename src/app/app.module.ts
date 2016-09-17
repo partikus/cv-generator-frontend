@@ -19,6 +19,9 @@ import { NoContent } from './no-content';
 import { Navbar } from "./shared/navbar";
 import { Landing } from "./landing";
 import { CreateCv } from "./create-cv";
+import { Qualifications } from "./create-cv/qualifications";
+import { BasicInformation } from "./create-cv/basic-information";
+import { EmploymentHistory } from "./create-cv/employment-history";
 
 // Application wide providers
 const APP_PROVIDERS = [
@@ -43,7 +46,10 @@ type StoreType = {
     Landing,
     CreateCv,
     NoContent,
-    Navbar
+    Navbar,
+    Qualifications,
+    BasicInformation,
+    EmploymentHistory
   ],
   imports: [ // import Angular's modules
     BrowserModule,
