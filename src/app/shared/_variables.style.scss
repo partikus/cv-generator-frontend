@@ -1,0 +1,20 @@
+/* Colors */
+$mainOrange: #ff6700;
+
+/* Media Queries */
+$media-xs-min-width: 480px;
+$media-sm-min-width: 768px;
+$media-md-min-width: 992px;
+$media-lg-min-width: 1200px;
+$media-xlg-min-width: 1600px;
+$media-xxlg-min-width: 1920px;
+
+$media-xs-max-width: $media-xs-min-width - 1;
+$media-sm-max-width: $media-sm-min-width - 1;
+$media-md-max-width: $media-md-min-width - 1;
+$media-lg-max-width: $media-lg-min-width - 1;
+$media-xlg-max-width: $media-xlg-min-width - 1;
+$media-xxlg-max-width: $media-xxlg-min-width - 1;
+
+$media-sm-height: 550px;
+$media-md-height: 700px;
