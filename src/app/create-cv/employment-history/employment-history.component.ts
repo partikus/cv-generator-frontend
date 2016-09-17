@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { AppState } from '../app.service';
+import { Component Input } from '@angular/core';
+import { Project } from "../../shared/models/project.model";
 
 @Component({
   selector: 'employment-history',
@@ -7,6 +7,7 @@ import { AppState } from '../app.service';
   templateUrl: './employment-history.template.html'
 })
 export class EmploymentHistory {
+  @Input() projects: Project[];
   constructor() {
 
   }

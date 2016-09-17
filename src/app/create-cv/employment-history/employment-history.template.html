@@ -1,6 +1,20 @@
 <div class="employmentHistory">
   <div class="employmentHistory-header">
     <h1>Employment history</h1>
+    <p>Add new</p>
   </div>
-  Add/Remove employment history, change priority
+  <ul class="employmentHistory-lists">
+    <li *ngFor="let job of projects">
+      <p>Company: {{job.company}}</p>
+      <p>Role: {{job.role}}</p>
+      <p>Responsibilities: {{job.responsibilities}}</p>
+      <p>Skills</p>
+      <ul>
+        <li *ngFor="let skill of job.skills">{{skill.name}}</li>
+      </ul>
+      <p>Description: {{job.description}}</p>
+      <p>Start date: {{job.startDate}}</p>
+      <p>End date: {{job.endDate}}</p>
+    </li>
+  </ul>
 </div>
