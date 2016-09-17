@@ -16,20 +16,7 @@ import { AppState } from './app.service';
     './app.style.css'
   ],
   template: `
-    <nav>
-      <span>
-        <a [routerLink]=" ['./'] ">
-          Index
-        </a>
-      </span>
-      |
-      <span>
-        <a [routerLink]=" ['./home'] ">
-          Home
-        </a>
-      </span>
-    </nav>
-
+    <navbar></navbar>
     <main>
       <router-outlet></router-outlet>
     </main>
