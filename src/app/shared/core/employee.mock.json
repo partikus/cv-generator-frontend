@@ -1,0 +1,79 @@
+{
+  "limit": 1,
+  "offset": 1,
+  "total": 1,
+  "items": [
+    {
+      "firstName": "John",
+      "lastName": "Rambo",
+      "username": "jrambo",
+      "email": "jrambo@gmail.com",
+      "jobTitle": "security leader",
+      "details": {
+        "experience": "IT, music",
+        "education": "2000 - 2010 Video Gaming High School",
+        "hobbies": "playing chess"
+      },
+      "skills": [
+        {
+          "skill": {
+            "name": "PHP",
+            "description": "PHP PoWeR!!",
+            "url": "http://www.php.net/"
+          },
+          "startDate": "2004-02-12T15:19:21+00:00",
+          "lastUsage": "2008-02-12T15:19:21+00:00",
+          "level": 5
+        },
+        {
+          "skill": {
+            "name": "Vagrant",
+            "description": "vagrant destroy",
+            "url": "https://www.vagrantup.com/"
+          },
+          "startDate": "2016-02-12T15:19:21+00:00",
+          "lastUsage": "",
+          "level": 2
+        }
+      ],
+      "languages": [
+        {
+          "name": "english",
+          "iso3": "en",
+          "level": 5
+        },
+        {
+          "name": "polish",
+          "iso3": "pl",
+          "level": 4
+        }
+      ],
+      "projects": [
+        {
+          "company": "PGS Software",
+          "role": "PHP Developer",
+          "responsibilities": "Write awesome code!",
+          "skills": [],
+          "description": "Bla bla bla bla",
+          "startDate": "2010-01-12T15:19:21+00:00",
+          "endDate": "2015-02-12T15:19:21+00:00"
+        },
+        {
+          "company": "PGS Software",
+          "role": "PHP Developer",
+          "responsibilities": "Write awesome code!",
+          "skills": [
+            {
+              "name": "Vagrant",
+              "description": "vagrant destroy",
+              "url": "https://www.vagrantup.com/"
+            }
+          ],
+          "description": "Bla bla bla bla",
+          "startDate": "2014-02-12T15:19:21+00:00",
+          "endDate": ""
+        }
+      ]
+    }
+  ]
+}
