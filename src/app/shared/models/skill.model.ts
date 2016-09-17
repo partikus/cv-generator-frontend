@@ -1,4 +1,4 @@
-class BaseSkill {
+export class BaseSkill {
   public name: string;
   public description: string;
   public url: string;
