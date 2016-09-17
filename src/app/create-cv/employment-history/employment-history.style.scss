@@ -1,12 +1,36 @@
+@import '../../shared/base.style';
+
 .employmentHistory {
+  &-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #F9F9F9;
+    padding: 10px;
+    &-title {
+      color: $mainOrange;
+      margin: 0;
+    }
+  }
   &-lists {
     list-style: none;
     padding: 0;
     li {
       width: 100%;
-      height: 100px;
-      border: 1px solid black;
-      margin-bottom: 10px;
+      margin-bottom: 30px;
     }
+  }
+  &-property {
+    display: flex;
+    padding: 20px;
+    &:first-child {
+      background: #d4d4d4;
+    }
+    &:not(:first-child) {
+      border-bottom: 1px solid #d4d4d4;
+    }
+  }
+  &-label {
+    flex-basis: 300px;
   }
 }

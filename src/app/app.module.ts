@@ -4,6 +4,8 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
 import { removeNgStyles, createNewHosts, createInputTransfer } from '@angularclass/hmr';
+import { ModalModule } from 'angular2-modal';
+
 
 /*
  * Platform and Environment providers/directives/pipes
@@ -22,6 +24,8 @@ import { CreateCv } from "./create-cv";
 import { Qualifications } from "./create-cv/qualifications";
 import { BasicInformation } from "./create-cv/basic-information";
 import { EmploymentHistory } from "./create-cv/employment-history";
+import { VexModalModule } from "angular2-modal/plugins/vex/vex.module";
+import { CoreService } from "./shared/core/core.service";
 
 // Application wide providers
 const APP_PROVIDERS = [
@@ -55,11 +59,14 @@ type StoreType = {
     BrowserModule,
     FormsModule,
     HttpModule,
-    RouterModule.forRoot(ROUTES, { useHash: true })
+    ModalModule.forRoot(),
+    RouterModule.forRoot(ROUTES, { useHash: true }),
+    VexModalModule
   ],
   providers: [ // expose our Services and Providers into Angular's dependency injection
     ENV_PROVIDERS,
-    APP_PROVIDERS
+    APP_PROVIDERS,
+    CoreService
   ]
 })
 export class AppModule {

@@ -1,21 +1,32 @@
 <div class="qualifications">
   <div class="qualifications-header">
-    <h1>Skills</h1>
+    <h1 class="qualifications-header-title">Skills</h1>
+    <p>Add new</p>
   </div>
   <div class="qualifications-mainSkills">
     <h3 class="qualifications-mainSkills-header">Main Skills</h3>
     <ul class="qualifications-mainSkills-lists">
-      <li></li>
-      <li></li>
       <li></li>
     </ul>
   </div>
   <div class="qualifications-otherSkills">
     <h3 class="qualifications-otherSkills-header">Skills</h3>
     <ul class="qualifications-otherSkills-lists">
-      <li></li>
-      <li></li>
-      <li></li>
+      <div class="qualifications-skill">
+        <div class="qualifications-skill-name">Name</div>
+        <div class="qualifications-skill-experience">Experience</div>
+        <div class="qualifications-skill-level">Level</div>
+        <div class="qualifications-skill-lastUsed">Last used</div>
+      </div>
+
+      <li *ngFor="let skill of skills">
+        <div class="qualifications-skill">
+          <div class="qualifications-skill-name">{{ skill.skill.name }}</div>
+          <div class="qualifications-skill-experience">{{ skill.startDate }}</div>
+          <div class="qualifications-skill-level">{{ skill.level }}</div>
+          <div class="qualifications-skill-lastUsed">{{ skill.lastUsage }}</div>
+        </div>
+      </li>
     </ul>
   </div>
 </div>

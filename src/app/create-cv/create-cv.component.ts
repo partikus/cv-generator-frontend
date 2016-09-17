@@ -1,5 +1,8 @@
 import { Component } from '@angular/core';
-import { AppState } from '../app.service';
+import { Employee } from "../shared/models/employee.model";
+import { Details } from "../shared/models/details.model";
+import {Skill} from "../shared/models/skill.model";
+import {CoreService} from "../shared/core/core.service";
 
 @Component({
   selector: 'create-cv',
@@ -7,11 +10,17 @@ import { AppState } from '../app.service';
   templateUrl: './create-cv.template.html'
 })
 export class CreateCv {
-  constructor() {
+  employee: Employee = new Employee({});
+  constructor(public coreService: CoreService) {
 
   }
 
   ngOnInit() {
-    console.log('hello `CreateCv` component');
+      this.coreService.getEmployee(2)
+        .subscribe(
+          employee => {
+            this.employee = employee;
+          }
+        );
   }
 }

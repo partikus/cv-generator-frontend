@@ -23,7 +23,7 @@ export class Project {
     this.company = model.company;
     this.role = model.role;
     this.responsibilities = model.responsibilities;
-    this.skills = model.skills;
+    this.skills = model.skills ? model.skills : [];
     this.description = model.description;
     this.startDate = model.startDate;
     this.endDate = model.endDate;

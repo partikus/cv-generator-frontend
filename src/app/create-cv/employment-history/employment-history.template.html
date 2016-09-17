@@ -1,20 +1,36 @@
 <div class="employmentHistory">
   <div class="employmentHistory-header">
-    <h1>Employment history</h1>
+    <h1 class="employmentHistory-header-title">Employment history</h1>
     <p>Add new</p>
   </div>
   <ul class="employmentHistory-lists">
-    <li *ngFor="let job of projects">
-      <p>Company: {{job.company}}</p>
-      <p>Role: {{job.role}}</p>
-      <p>Responsibilities: {{job.responsibilities}}</p>
-      <p>Skills</p>
-      <ul>
-        <li *ngFor="let skill of job.skills">{{skill.name}}</li>
-      </ul>
-      <p>Description: {{job.description}}</p>
-      <p>Start date: {{job.startDate}}</p>
-      <p>End date: {{job.endDate}}</p>
+    <li *ngFor="let job of projects" class="employmentHistory-element">
+      <div class="employmentHistory-property">
+        <div class="employmentHistory-label">Company:</div>
+        <div class="employmentHistory-value">{{job.company}}</div>
+      </div>
+      <div class="employmentHistory-property">
+        <div class="employmentHistory-label">Time period:</div>
+        <div class="employmentHistory-value">{{job.startDate}} - {{job.endDate}}</div>
+      </div>
+      <div class="employmentHistory-property">
+        <div class="employmentHistory-label">Role:</div>
+        <div class="employmentHistory-value">{{job.role}}</div>
+      </div>
+      <div class="employmentHistory-property">
+        <div class="employmentHistory-label">Responsibilities:</div>
+        <div class="employmentHistory-value">{{job.responsibilities}}</div>
+      </div>
+      <div class="employmentHistory-property">
+        <div class="employmentHistory-label">Tools & technologies used:</div>
+        <div class="employmentHistory-value">
+          <span *ngFor="let skill of job.skills; let isLast = last">{{skill.name}}{{isLast ? '' : ', '}}</span>
+        </div>
+      </div>
+      <div class="employmentHistory-property">
+        <div class="employmentHistory-label">Project description:</div>
+        <div class="employmentHistory-value">{{job.description}}</div>
+      </div>
     </li>
   </ul>
 </div>

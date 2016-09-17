@@ -1,9 +1,10 @@
 .createCv {
-  background: #cdcdcd;
+  background: #eaeaea;
   min-height: calc(100% - 100px);
   display: flex;
   justify-content: center;
   &-container {
+    width: 100%;
     max-width: 1000px;
   }
 }

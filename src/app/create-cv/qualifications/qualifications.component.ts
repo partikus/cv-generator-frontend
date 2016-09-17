@@ -13,6 +13,6 @@ export class Qualifications {
   }
 
   ngOnInit() {
-    console.log('hello `Qualifications` component');
+
   }
 }

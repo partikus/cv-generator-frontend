@@ -1,14 +1,36 @@
+@import '../../shared/base.style';
+
 .qualifications {
+  &-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #F9F9F9;
+    padding: 10px;
+    &-title {
+      color: $mainOrange;
+      margin: 0;
+    }
+  }
   &-mainSkills {
     &-lists {
       list-style: none;
       padding: 0;
+      display: flex;
       li {
         display: inline-block;
-        width: 150px;
+        flex: 0 0 20%;
         height: 100px;
         border: 1px solid black;
       }
+    }
+  }
+  &-skill {
+    display: flex;
+    justify-content: space-between;
+    div {
+      flex: 1;
+      padding: 5px;
     }
   }
   &-otherSkills {

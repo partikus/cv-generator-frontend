@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { Employee } from "../../shared/models/employee.model";
 
 @Component({
@@ -8,10 +8,12 @@ import { Employee } from "../../shared/models/employee.model";
 })
 export class BasicInformation {
   @Input() employee: Employee;
+  @Output() onEmployeeChange = new EventEmitter();
+
   constructor() {
   }
 
   ngOnInit() {
-    console.log('hello `BasicInformation` component');
+
   }
 }

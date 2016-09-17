@@ -21,7 +21,7 @@ export class Home {
   }
 
   ngOnInit() {
-    console.log('hello `Home` component');
+
   }
 
   submitState(value: string) {

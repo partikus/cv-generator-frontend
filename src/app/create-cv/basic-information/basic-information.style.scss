@@ -1,13 +1,40 @@
 @import '../../shared/base.style';
 
+.form {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  &-group {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  &-label {
+    flex-basis: 300px;
+  }
+  &-input {
+    flex: auto;
+    height: 40px;
+  }
+  &-textarea {
+    flex: auto;
+  }
+}
+
 .basicInformation {
     width: 100%;
     max-width: 1000px;
-  &-form {
-    display: flex;
-    flex-direction: column;
-    &-group {
-      display: flex;
+  &-header {
+    background: #F9F9F9;
+    padding: 10px;
+    &-title {
+      color: $mainOrange;
+      margin: 0;
+    }
+  }
+  &-languages {
+    flex: auto;
+    .form-input {
+      width: 100%;
     }
   }
 }
