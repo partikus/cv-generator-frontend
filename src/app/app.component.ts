@@ -17,9 +17,6 @@ import { AppState } from './app.service';
   ],
   template: `
     <router-outlet></router-outlet>
-    <footer>
-      Footer
-    </footer>
   `
 })
 export class App {
