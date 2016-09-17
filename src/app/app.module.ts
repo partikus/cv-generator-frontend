@@ -18,6 +18,7 @@ import { Home } from './home';
 import { NoContent } from './no-content';
 import { Navbar } from "./shared/navbar";
 import { Landing } from "./landing";
+import { CreateCv } from "./create-cv";
 
 // Application wide providers
 const APP_PROVIDERS = [
@@ -40,6 +41,7 @@ type StoreType = {
     App,
     Home,
     Landing,
+    CreateCv,
     NoContent,
     Navbar
   ],
