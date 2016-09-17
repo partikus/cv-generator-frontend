@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { AppState } from '../app.service';
+import { Component, Input } from '@angular/core';
+import { Skill } from "../../shared/models/skill.model";
 
 @Component({
   selector: 'qualifications',
@@ -7,6 +7,7 @@ import { AppState } from '../app.service';
   templateUrl: './qualifications.template.html'
 })
 export class Qualifications {
+  @Input() skills: Skill[];
   constructor() {
 
   }

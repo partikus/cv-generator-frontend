@@ -1,3 +1,26 @@
 .qualifications {
-
+  &-mainSkills {
+    &-lists {
+      list-style: none;
+      padding: 0;
+      li {
+        display: inline-block;
+        width: 150px;
+        height: 100px;
+        border: 1px solid black;
+      }
+    }
+  }
+  &-otherSkills {
+    &-lists {
+      list-style: none;
+      padding: 0;
+      li {
+        width: 100%;
+        height: 40px;
+        border: 1px solid black;
+        margin-bottom: 3px;
+      }
+    }
+  }
 }
