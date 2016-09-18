@@ -1,6 +1,6 @@
 {
   "name": "cv_generator_frontend",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Generator for CV's in PGS Software",
   "keywords": [
     "angular2",

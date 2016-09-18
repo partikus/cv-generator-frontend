@@ -11,13 +11,14 @@ RUN usermod -u $USERID www-data && \
     chown -R www-data:www-data /app
 
 RUN npm config set registry https://registry.npmjs.org/ && \
-    npm install --allow-root -g -d --silent webpack && \
-    npm install --allow-root -g -d --silent webpack-merge && \
-    npm install --allow-root -g -d --silent webpack-dev-server && \
-    npm install --allow-root -g -d --silent karma && \
-    npm install --allow-root -g -d --silent protractor && \
-    npm install --allow-root -g -d --silent typescript && \
-    npm install --allow-root -g -d --silent rimraf
+    npm install --allow-root -g -d --silent \
+        webpack \
+        webpack-merge \
+        webpack-dev-server \
+        karma \
+        protractor \
+        typescript \
+        rimraf
 
 USER www-data
 
@@ -26,7 +27,9 @@ ADD package.json /app/package.json
 RUN cd /app/ && \
     npm cache clear && \
     npm config set registry https://registry.npmjs.org/ && \
-    /usr/local/bin/node --stack-size=128000 /usr/local/bin/npm install --no-bin-links --quiet
+    /usr/local/bin/node --stack-size=192000 /usr/local/bin/npm install --no-bin-links --quiet
+
+EXPOSE 3000 8080
 
 WORKDIR /var/www/frontend
 
