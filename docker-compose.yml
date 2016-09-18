@@ -1,0 +1,27 @@
+frontend:
+  image: $APP_NAME:$APP_VERSION
+  volumes:
+    - .:/var/www/frontend
+
+hub:
+  image: selenium/hub
+  environment:
+    - GRID_TIMEOUT=30000
+
+firefox:
+  image: selenium/node-firefox
+  links:
+    - hub
+    - frontend
+  environment:
+    SCREEN_WIDTH: "1366"
+    SCREEN_HEIGHT: "768"
+
+chrome:
+  image: selenium/node-chrome
+  links:
+    - hub
+    - frontend
+  environment:
+    SCREEN_WIDTH: "1366"
+    SCREEN_HEIGHT: "768"
